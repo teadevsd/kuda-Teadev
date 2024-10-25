@@ -52,11 +52,7 @@ export default Card;
 const Wrapper = styled.div`
     max-width: 1280px;
     margin: 0 auto;
-    border: 1px solid;
-    /* justify-content: center;
-    align-items: center; */
-    /* padding: 10px; */
-    
+    /* border: 1px solid; */
 `
 
 const CardCont = styled.div `
@@ -81,17 +77,15 @@ const CardItem = styled.div `
     display: flex;
     flex-direction: column;
     padding: 30px;
-
-@media (max-width: 800px) {
+    
+@media (max-width: 900px) {
     min-width: 80%;
     height: 100px;
     flex-direction: row;
     align-items: center;
     gap: 20px;
-    /* margin: 0 80px; */
-}
-    
-`
+}`
+
 const Iconstyled = styled.div`
     font-size: 30px;
     color: #2c012c; 
@@ -109,7 +103,7 @@ const Description = styled.span `
     margin-top: 10px;
     font-weight: bold;
     font-size: 14px;
-
+    color: #40196d; 
 
 @media (max-width: 768px) {
     font-size: 13px;

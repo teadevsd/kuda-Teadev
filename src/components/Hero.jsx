@@ -23,7 +23,9 @@ const Hero = () => {
                     </GooBtn>
                 </Button>
 
+                <Fbnimage>
                     <img src="./FBN.png" alt="" />
+                </Fbnimage>
 
             </HeroDetails>
 
@@ -44,7 +46,7 @@ export default Hero;
 const Wrapper = styled.div`
     max-width: 1280px;
     min-height: calc(100vh-70px);
-    border: 1px solid orange;
+    /* border: 1px solid orange; */
     margin: 80px auto;
     display: flex;
     align-items: center;
@@ -65,7 +67,7 @@ const HeroContainer = styled.div`
   flex-wrap: wrap;
   align-items: center;
   width: 85%;
-  border: 1px solid;
+  /* border: 1px solid; */
 
 @media (max-width: 1200px) {
     flex-direction: column;
@@ -146,6 +148,13 @@ const GooBtn = styled.div`
   }
 `;
 
+const Fbnimage = styled.div`
+  @media (max-width: 800px) {
+    img {
+      width: 300px;
+    }
+}
+`
 const Imagecont = styled.div`
     position: relative;
     width: 550px;

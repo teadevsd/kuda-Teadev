@@ -2,10 +2,17 @@ import { IoMdArrowDropdown } from "react-icons/io";
 import styled from "styled-components";
 import { IoReorderTwoOutline } from "react-icons/io5";
 import {Link} from "react-router-dom"
+import { useState } from "react";
+import Sidebar from "./SideBar";
 
 const Header = () =>{
+    const [toggle, setToggle] = useState(false)
+
+        const handleToggle = () =>{
+            setToggle(!toggle)
+        }
     return(
-        
+        <>
             <Wrapper>
                 <Container>
                     <LogoNav>
@@ -52,14 +59,15 @@ const Header = () =>{
                                 <img src="/nigeria.png" alt="nig" />
                             </ConBtn>
 
-                            <Sidenav>
+                            <Sidenav onClick={handleToggle}>
                                 <IoReorderTwoOutline/>
                             </Sidenav>
                     </Buttons>
                     
                 </Container>
             </Wrapper>
-       
+            {toggle === false ? null: <Sidebar toggle ={toggle}/>}
+        </>
     )
 }
 

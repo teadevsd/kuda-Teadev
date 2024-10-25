@@ -21,18 +21,22 @@ const Wrapper = styled.div`
     max-width: 1280px;
     margin: 0 auto;
     display: flex;
-    border: 1px solid;
+    /* border: 1px solid; */
 `
 
 const Logcont = styled.div`
-    width: 95%;
+    width: 100%;
     display: flex;
-    justify-content: space-between;
-    border: 1px solid red;
+    gap: 37px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    /* border: 1px solid red; */
     margin: 0 auto;
+    cursor: pointer;
 
     img{
         /* padding: 30px; */
-        max-width: 300px;
+        max-width: 250px;
     }
 `
