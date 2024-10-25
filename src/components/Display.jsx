@@ -92,13 +92,13 @@ export default Display
 
 const Wrapper = styled.div`
     max-width: 1280px;
-    border: 1px solid;
+    /* border: 1px solid; */
     margin: 50px auto;
 `
 
 const Insidewrap = styled.div`
     width: 85%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     margin: 0 auto;
 `
 
@@ -109,8 +109,8 @@ const Contentdiv = styled.div `
     align-items: center;
     justify-content: space-between;
 
-@media (max-width: 1200px) {
-    /* padding: 40px; */
+@media (max-width: 800px) {
+    justify-content: center;
 }
 `
 
@@ -132,9 +132,12 @@ const DetailsCont = styled.div`
     max-width: 40%;
     /* text-align: center; */
 }
-@media (max-width: 900px) {
-    max-width: 30%;
+@media (max-width: 800px) {
+    max-width: 90%;
     /* text-align: center; */
+}
+@media (max-width: 800px) {
+    text-align: center;
 }
 `
 
@@ -147,7 +150,7 @@ const Title = styled.h2`
 
 @media (max-width: 1200px) {
     max-width: 100%;
-    font-size: 24px;
+    font-size: 26px;
     /* text-align: center; */
 }
 `
@@ -158,8 +161,7 @@ const Text = styled.p`
 
 @media (max-width: 1200px) {
     font-size: 16px;
-}
-`
+}`
 
 const Link = styled.a`
     color: #46088d;
@@ -167,8 +169,9 @@ const Link = styled.a`
     display: flex;
     align-items: center;
 
-@media (max-width: 1200px) {
-    /* justify-content: center; */
+@media (max-width: 800px) {
+    justify-content: center;
+    font-size: 13px;
 }
 `
 
